@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   maximum-scale=1.0,
+                   user-scalable=no">
+
+    <title>2:17 AM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="game">
+
+    <!-- =====================================================
+         CINEMATIC WORLD
+    ====================================================== -->
+
+    <div id="world">
+
+        <div id="room">
+
+            <!-- WALL -->
+            <div class="wall"></div>
+
+            <!-- MOONLIGHT -->
+            <div class="moonlight"></div>
+
+            <!-- FLOOR -->
+            <div class="floor"></div>
+
+            <!-- WINDOW -->
+            <div id="window-object" class="window-object">
+
+                <div class="window-glass">
+                    <div class="moon"></div>
+                    <div class="outside-fog"></div>
+                    <div id="window-shadow"></div>
+                </div>
+
+                <div class="window-frame-v"></div>
+                <div class="window-frame-h"></div>
+
+            </div>
+
+            <!-- DOOR -->
+            <div id="door-object" class="door-object">
+
+                <div id="door">
+                    <div class="door-panel panel-one"></div>
+                    <div class="door-panel panel-two"></div>
+
+                    <div class="door-knob"></div>
+                </div>
+
+                <div id="hallway">
+                    <div class="hall-light"></div>
+                </div>
+
+            </div>
+
+            <!-- BED -->
+            <div id="bed-object" class="bed-object">
+
+                <div class="bed-head"></div>
+
+                <div class="pillow pillow-one"></div>
+                <div class="pillow pillow-two"></div>
+
+                <div id="blanket"></div>
+
+                <div class="bed-shadow"></div>
+
+            </div>
+
+            <!-- PHONE -->
+            <div id="phone-object" class="phone-object">
+
+                <div class="phone-body">
+
+                    <div id="phone-screen">
+
+                        <div class="phone-time">
+                            2:17
+                        </div>
+
+                        <div class="unknown-call">
+                            UNKNOWN
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PERSON SHADOW -->
+            <div id="person-shadow">
+
+                <div class="shadow-head"></div>
+                <div class="shadow-body"></div>
+
+            </div>
+
+            <!-- ROOM LIGHT -->
+            <div class="room-light"></div>
+
+            <!-- GRAIN -->
+            <div class="film-grain"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CINEMATIC UI
+    ====================================================== -->
+
+    <div id="hud">
+
+        <div class="hud-left">
+            <span>2:17 AM</span>
+        </div>
+
+        <button id="sound-toggle">
+            SOUND ON
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         START
+    ====================================================== -->
+
+    <section id="start-screen" class="screen active">
+
+        <div class="start-content">
+
+            <div class="eyebrow">
+                A SHORT INTERACTIVE HORROR EXPERIENCE
+            </div>
+
+            <h1>2:17 AM</h1>
+
+            <div class="created">
+                Created by amnakeemz
+            </div>
+
+            <button id="start-button">
+                BEGIN
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         STORY
+    ====================================================== -->
+
+    <section id="story-ui">
+
+        <div id="scene-info">
+
+            <span id="scene-location">
+                BEDROOM
+            </span>
+
+            <span class="dot">•</span>
+
+            <span id="scene-time">
+                2:17 AM
+            </span>
+
+        </div>
+
+
+        <div id="story-content">
+
+            <div id="story-text"></div>
+
+            <div id="choices"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ENDING
+    ====================================================== -->
+
+    <section id="ending-screen">
+
+        <div id="ending-flash"></div>
+
+        <div id="ending-content">
+
+            <div id="ending-label"></div>
+
+            <h2 id="ending-title"></h2>
+
+            <p id="ending-text"></p>
+
+            <button id="ending-button"></button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CREDIT
+    ====================================================== -->
+
+    <section id="credit-screen">
+
+        <div id="credit-camera">
+
+            <div id="credit-line-1">
+                2:17 AM
+            </div>
+
+            <div id="credit-line-2">
+                A SHORT INTERACTIVE HORROR EXPERIENCE
+            </div>
+
+            <div id="credit-line-3">
+                CREATED BY<br>
+                <strong>amnakeemz</strong>
+            </div>
+
+            <div id="credit-line-4">
+                SOME STORIES ARE BETTER<br>
+                LEFT UNFINISHED.
+            </div>
+
+            <div id="credit-line-5">
+                THANK YOU FOR PLAYING
+            </div>
+
+            <div id="credit-line-6">
+                © 2026 amnakeemz
+            </div>
+
+        </div>
+
+        <button id="play-again">
+            PLAY AGAIN
+        </button>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRANSITION
+    ====================================================== -->
+
+    <div id="transition"></div>
+
+
+    <!-- =====================================================
+         SYSTEM MESSAGE
+    ====================================================== -->
+
+    <div id="system-message"></div>
+
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
